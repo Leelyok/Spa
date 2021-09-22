@@ -14,6 +14,10 @@
     min-height: 10rem;
 }
 
+.landscape  { padding-bottom: 65%;}
+.portrait   { padding-bottom: 125%;}
+.square     { padding-bottom: 100%;}
+
 /* Universal styles & utility classes */
 
 body { 
@@ -22,12 +26,21 @@ body {
 }
 
 .padded    { padding: 5%;}
-.padded-sm { padding: 1rem;}
+.padded-1    { padding: 1rem;}
+.padded-sm { padding: 2.5%;}
 .padded-lg { padding: 10%;}
 
 .bg-dark { 
     background-color: #403630;
     color: white;
+}
+
+.bg-light { 
+    background-color: #d8c6bf;
+}
+
+.bg-lightblue {
+    background-color: rgb(206, 206, 240);
 }
 
 
@@ -45,10 +58,14 @@ body {
 
 /* Typography Styles  */
 
+h2, h3, h4, h5, h6 {
+margin-bottom: 1rem;
+line-height: 1.1;
+
+}
+
 h2 {
     font-size: 2.5rem;
-    line-height: 1.1;
-    margin-bottom: 1rem;
 }
 
 h3 { line-height: 1;  }
