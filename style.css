@@ -93,7 +93,7 @@
 }
 
 .bg-lightblue {
-    background-color: rgb(206, 206, 240);
+    background-color: rgb(227, 227, 243);
 }
 
 
@@ -145,8 +145,9 @@ a:hover {
 }
 
 
-.featured-text {  color: #d8c6bf;}
+.featured-text {  color: #bb9c8f;}
 .white-text    {  color: white;  }
+.text-dark     {  color: #403630;  }
 
 .small-text    { font-size: 1.5rem;}
 .medium-text   { 
@@ -177,15 +178,25 @@ a:hover {
 /*  Header styles  */
 
 header {
-    background-image: url('/images/spa-photo\ \(7\).jpg');
+    background-image: url('/images/spa-relax\ \(4\).jpg');
     background-size: cover;
-    background-position: center;
-    padding: 1% 5%;
+    background-position: 50% 20%;
+    padding: 2% 5%;
 }
 
 header h3 {
     font-size: 5.5rem;
     line-height: 1;
+}
+
+nav a {
+    padding: 0.5rem;
+    display: inline-block;
+    border: none;
+}
+
+.logo h2 {
+    margin-bottom: 0;
 }
 
 footer a {
@@ -203,6 +214,26 @@ footer a {
     background-position: 50% 57%;
 }
 
+.bg-bath {
+    background-image: url('/images/spa-relax\ \(3\).jpg');
+    background-position: 50% 35%;
+}
+
+.bg-massage2 {
+    background-image: url('/images/spa-relax\ \(1\).jpg');
+    background-position: 50% 35%;
+}
+
+.bg-stone {
+    background-image: url('/images/spa-relax\ \(2\).jpg');
+    background-position: 50% 35%;
+}
+
+.bg-back {
+    background-image: url('/images/spa-photo\ \(7\).jpg');
+    background-position: 50% 35%;
+}
+
 /* Icon Styles*/
 .fas {
     display: block;
@@ -216,6 +247,25 @@ input,
 textarea {
     width: 100%;
     display: block;
+    margin-bottom: 0.4rem;
+    padding: 0.5rem;
+    font-family: inherit;
+    font-size: 0.9rem;
+    border: 2px solid transparent;
+}
+
+input:focus,
+textarea:focus {
+    border: 2px solid #403630;
+    outline: none;
+}
+
+.button {
+    padding: 0.5rem 2rem;
+    background-color: #e2c6b5;
+    appearance: none;
+    border: 2px solid #403630;
+    color: inherit;
 }
 
 /*-------For qoites---*/
