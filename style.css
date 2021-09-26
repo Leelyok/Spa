@@ -6,29 +6,82 @@
 
 
 
+/* Universal styles & utility classes */
+
+
+
+/*--------------Universal &  Utility classes------------------------*/
+
+/* Padding Utility Classes */ 
+.padded-sm { padding: 2.5%; }
+.padded    { padding: 5%;   }
+.padded-lg { padding: 10%;  }
+
+.padded-05 { padding: 0.5rem; }
+.padded-1  { padding: 1rem; }
+.padded-2  { padding: 2rem; }
+
+.padded-t  { padding-top: 5%; }
+.padded-b  { padding-bottom: 5%; }
+.padded-l  { padding-left: 5%; }
+.padded-r  { padding-right: 5%; }
+
+.padded-tb  { padding-top: 5%; padding-bottom: 5%; }
+.padded-lr  { padding-left: 5%; padding-right: 5%; }
+
+.padded-t-1 { padding-top: 1rem; }
+.padded-b-1 { padding-bottom: 1rem; }
+.padded-l-1 { padding-left: 1rem; }
+.padded-r-1 { padding-right: 1rem; }
+
+.padded-t-2 { padding-top: 2rem; }
+.padded-b-2 { padding-bottom: 2rem; }
+.padded-l-2 { padding-left: 2rem; }
+.padded-r-2 { padding-right: 2rem; }
+
+.padded-t-0 { padding-top: 0; }
+.padded-b-0 { padding-bottom: 0; }
+.padded-l-0 { padding-left: 0; }
+.padded-r-0 { padding-right: 0; }
+
+/* Margin Utility Classes */ 
+
+.margin-t { margin-top: 5%; }
+.margin-b { margin-bottom: 5%; }
+.margin-l { margin-left: 5%; }
+.margin-r { margin-right: 5%; }
+
+.margin-t-1 { margin-top: 1rem; }
+.margin-b-1 { margin-bottom: 1rem; }
+.margin-l-1 { margin-left: 1rem; }
+.margin-r-1 { margin-right: 1rem; }
+
+.margin-t-2 { margin-top: 2rem; }
+.margin-b-2 { margin-bottom: 2rem; }
+.margin-l-2 { margin-left: 2rem; }
+.margin-r-2 { margin-right: 2rem; }
+
+.margin-t-0 { margin-top: 0; }
+.margin-b-0 { margin-bottom: 0; }
+.margin-l-0 { margin-left: 0; }
+.margin-r-0 { margin-right: 0; }
+
+.margin-tb { margin-top: 5%; margin-bottom: 5%; }
+.margin-lr { margin-left: 5%; margin-right: 5%; }
+
+
 
 /* Image Styles */
 .bg-image {
     background-image: url(/images/spa-photo\ \(6\).jpg);
     background-size: cover;
+    background-repeat: no-repeat;
     min-height: 10rem;
 }
 
 .landscape  { padding-bottom: 65%;}
 .portrait   { padding-bottom: 125%;}
 .square     { padding-bottom: 100%;}
-
-/* Universal styles & utility classes */
-
-body { 
-    font-family: 'Cabin', sans-serif;
-    color: #403630;
-}
-
-.padded    { padding: 5%;}
-.padded-1    { padding: 1rem;}
-.padded-sm { padding: 2.5%;}
-.padded-lg { padding: 10%;}
 
 .bg-dark { 
     background-color: #403630;
@@ -52,23 +105,24 @@ body {
 .tall-100     { min-height: 100vh;}
 
 
-.text-right   { text-align: right;}
-.text-left    { text-align: left;}
 
+/*---------------------------- Typography Styles  */
 
-/* Typography Styles  */
+body { 
+    font-family: 'Cabin', sans-serif;
+    color: #403630;
+}
 
 h2, h3, h4, h5, h6 {
 margin-bottom: 1rem;
 line-height: 1.1;
-
 }
 
-h2 {
-    font-size: 2.5rem;
-}
+h2 {    font-size: 2.5rem;}
+h3 {    font-size: 1.8rem;}
+h4 {    font-size: 1.5rem;}
 
-h3 { line-height: 1;  }
+h3 {    line-height: 1;  }
 
 p {
     font-weight: 200;
@@ -107,13 +161,6 @@ a:hover {
     color: rgb(120, 120,125);
 }
 
-.quote-icon {
-    font-size: 6rem;
-    display: inline-block;
-    color: rgb(120, 120,125);
-    line-height: 1;
-}
-
 
 .font-weight-normal     {  font-weight: normal;}
 .font-weight-light      {  font-weight: light; }
@@ -133,6 +180,7 @@ header {
     background-image: url('/images/spa-photo\ \(7\).jpg');
     background-size: cover;
     background-position: center;
+    padding: 1% 5%;
 }
 
 header h3 {
@@ -161,4 +209,19 @@ footer a {
     text-align: center;
     margin-bottom: 2rem;
     font-size: 3rem;
+}
+
+
+input,
+textarea {
+    width: 100%;
+    display: block;
+}
+
+/*-------For qoites---*/
+.quote-icon {
+    font-size: 6rem;
+    display: inline-block;
+    color: rgb(120, 120,125);
+    line-height: 1;
 }
