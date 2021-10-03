@@ -73,7 +73,7 @@
 
 /* Image Styles */
 .bg-image {
-    background-image: url(/images/spa-photo\(6\).jpg);
+    background-image: url(/images/spa-photo-6.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -178,7 +178,7 @@ a:hover {
 /*  Header styles  */
 
 header {
-    background-image: url('/images/spa-relax\(4\).jpg');
+    background-image: url('/images/spa-relax-4.jpg');
     background-size: cover;
     background-position: 50% 20%;
     padding: 2% 5%;
@@ -205,32 +205,32 @@ footer a {
 
 /* Backgroung Images */
 
-.bg-massage   { background-image: url('/images/spa-photo\(2\).jpg');}
+.bg-massage   { background-image: url('/images/spa-photo-2.jpg');}
 .bg-oil       { 
-    background-image: url('/images/spa-photo\(1\).jpg');background-position: 50% 35%; }
+    background-image: url('/images/spa-photo-1.jpg');background-position: 50% 35%; }
 
 .bg-oil2 {
-    background-image: url('/images/spa-photo\(5\).jpg');
+    background-image: url('/images/spa-photo-5.jpg');
     background-position: 50% 57%;
 }
 
 .bg-bath {
-    background-image: url('/images/spa-relax\(3\).jpg');
+    background-image: url('/images/spa-relax-3.jpg');
     background-position: 50% 35%;
 }
 
 .bg-massage2 {
-    background-image: url('/images/spa-relax\(1\).jpg');
+    background-image: url('/images/spa-relax-1.jpg');
     background-position: 50% 35%;
 }
 
 .bg-stone {
-    background-image: url('/images/spa-relax\(2\).jpg');
+    background-image: url('/images/spa-relax-2.jpg');
     background-position: 50% 35%;
 }
 
 .bg-back {
-    background-image: url('/images/spa-photo\(7\).jpg');
+    background-image: url('/images/spa-photo-7.jpg');
     background-position: 50% 35%;
 }
 
