@@ -1,52 +1,18 @@
-<DOCTYPE html>
-    <html>
-        <!-- This is the head of our html where we add exernal resourses and metadata-->
-        <head>
-
-            <title> Services Spa Philosophy</title>
-
-            <!--------Viewport meta for responsive-->
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-            <!-- This is our Gridlex stylesheet-->
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
-                    
-            <!-- This is our Google Fonts (Cabin 200, 400, 500, 800)-->
-            <link rel="preconnect" href="https://fonts.googleapis.com">
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-            <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
-
-            <!-- This Fonts Awesome icons-->
-
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-                    
-
-            <!-- This is our CSS stylesheet, this always goes last-->
-            <link rel="stylesheet" href="/style.css">
-
-        </head>
-
-        <!-- Thhis is the body of our html where all my page content goes-->
-        <body>
+---
+layout: default
+cards:
+ - heading: Small heading
+   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+ - heading: Small heading
+   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+ - heading: Small heading
+   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+---
 
             <!-------------------Header section---------->
 
             <header class="grid text-center tall-70">
-                <div class="header-nav col-12-top grid">
-                    <div class="col-5_sm-12-middle">
-                        <a href="/index.html" class="logo featured-text">
-                            <h2> The SPA Philosophy </h2>
-                        </a>
-                    </div>
-                    <nav class=" col-7_sm-12-middle text-right sm-text-center">
-                        <a href="/index.html"> Home </a>
-                        <a href="/about.html"> About </a>
-                        <a href="/services.html"> Services </a>
-                        <a href="/contact.html"> Contact </a>
-                    </nav>
-
-                </div>
-
+                {% include header-nav.html %}
                 <div class="col-12 text-right">
                     <h3 class="font-weight-extra-bold"> <span class="featured-text"> relax </span> for everybody </h3>
                     <h1 class="font-weight-light"> the ultimate spa program </h1>
@@ -82,33 +48,17 @@
             <!------ Cards------->
 
             <section class="grid padded">
+                {% for item in page.cards %}
                 <div class="col-4 padded-sm">
                     <div class="card">
                         <div class="bg-image portrait"></div>
                         <div class="padded-1">
-                            <h3> little heading </h3>
-                            <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore debitis esse perspiciatis cum corrupti a cumque aperiam eos voluptatem sapiente, quam possimus at, autem rerum excepturi corporis ea non! Minima.</p>
+                            <h3> {{item.heading}} </h3>
+                            <p> {{item.description}} </p>
                         </div>
                     </div>
                 </div>
-                <div class="col-4 padded-sm">
-                    <div class="card">
-                        <div class="bg-image bg-oil portrait"></div>
-                        <div class="padded-1">
-                            <h3> little heading </h3>
-                            <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore debitis esse perspiciatis cum corrupti a cumque aperiam eos voluptatem sapiente, quam possimus at, autem rerum excepturi corporis ea non! Minima.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4 padded-sm">
-                    <div class="card">
-                        <div class="bg-image bg-oil2 portrait"></div>
-                        <div class="padded-1">
-                            <h3> little heading </h3>
-                            <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore debitis esse perspiciatis cum corrupti a cumque aperiam eos voluptatem sapiente, quam possimus at, autem rerum excepturi corporis ea non! Minima.</p>
-                        </div>
-                    </div>
-                </div>
+                {% endfor %}
             </section>
 
             <!---------------Image Banner Special offer----------------->
@@ -135,7 +85,7 @@
                     <!-- background image pug-->
                 </div>
                 
-                </section>
+            </section>
 
                 <section class="grid padded">             
             
@@ -160,19 +110,3 @@
                 </div>
             </section>
 
-        <!------------Footer-------------------->
-            <footer class="padded grid-spaceBetween bg-dark">
-                    <div class="col-4-bottom"> 
-                        <h2> Let's <br><span class="featured-text"> connect </span> </h2>
-                        <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam deleniti magnam tempore suscipit, velit quisquam iusto iure similique voluptatum sapiente nostrum fuga possimus temporibus vero soluta corrupti nulla, excepturi delectus!</p>
-                    </div>
-                    <div class="col-5-bottom">
-                        <p> <strong>Call:</strong> <a href="tel:#">045555 5555</a> </p>
-                        <p> <strong>Email:</strong> <a href="mailto:#">hello@sleep-co.com</a>  </p>
-                        <p> <strong>Store:</strong> 55 Main St, Chicago</p>
-                        <p> <strong>Instagram:</strong><a href="https://www.instagram.com/sleepco">  @thesleepco </a> </p>
-                    </div>
-            </footer>
-
-        </body>
-    </html>

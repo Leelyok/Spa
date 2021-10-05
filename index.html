@@ -1,5 +1,14 @@
 ---
 layout: default
+featured:
+- icon: fas fa-pepper-hot
+  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+- icon: fas fa-apple-alt
+  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+- icon: fas fa-carrot 
+  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+- icon: fas fa-pizza-slice 
+  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 ---
 
             <!-------------------Header section---------->
@@ -35,27 +44,18 @@ layout: default
             </section>
 
             <!---------------Icon grid----------------->
-            <section class="padded grid bg-dark">
+            <section class="padded grid-center bg-dark">
                 <div class="padded-sm col-12 text-center">
                     <h2> <span class="featured-text"> features </span> you will love </h2>
+                </div>
 
-                </div>
+                {% for item in page.featured %}
                 <div class="padded-sm col-3_sm-6 xxs-stack editable">
-                    <i class="fas fa-spa"></i>
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam quia, maxime maiores error fuga ab assumenda. Magni, eligendi ipsa cumque nesciunt quaerat doloribus necessitatibus odit, atque harum accusamus eveniet iusto.</p>
+                    <i class="{{item.icon}}"></i>
+                    <p> {{item.description}} </p>
                 </div>
-                <div class="padded-sm col-3_sm-6 xxs-stack editable">
-                    <i class="fas fa-spa"></i>
-                    <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil magnam consequatur voluptate accusamus quo harum id, delectus perferendis. Laboriosam voluptas et odit repellat. Modi facere distinctio eos aperiam ipsa maiores.</p>
-                </div>
-                <div class="padded-sm col-3_sm-6 xxs-stack editable">
-                    <i class="fas fa-spa"></i>
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum fuga officia quod perspiciatis eos autem inventore, illo repellendus minima, eveniet modi natus nulla pariatur ullam. Quis quod amet assumenda dolore?</p>
-                </div>
-                <div class="padded-sm col-3_sm-6 xxs-stack editable">
-                    <i class="fas fa-spa"></i>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam dolorum, est vel obcaecati sed error veritatis nostrum, voluptatibus voluptate architecto, non repellendus cum sint. Accusantium voluptatum iste quam repellendus molestiae?</p>
-                </div>
+                {% endfor %}
+
             </section>
 
 
