@@ -203,6 +203,37 @@ footer a {
     border: none;
 }
 
+/*  Mobile Menu Styles  */
+
+.mobile-menu {
+    position: fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+}
+
+.mobile-menu a {
+    display: block;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+ }
+ 
+ .hamburger-button {
+    position: relative;
+    z-index: 2;
+ }
+ 
+ .hamburger-button i {
+    font-size: 2.2rem;
+    margin-bottom: 0;
+ }
+
+.hamburger-button.active {
+    color: rgb(76, 72, 72);
+  }
+
+
 /* Backgroung Images */
 
 .bg-massage   { background-image: url('/images/spa-photo-2.jpg');}
@@ -282,7 +313,8 @@ textarea:focus {
 
 .show-xs, 
 .show-sm,
-.show-md {
+.show-md,
+.mobile-menu {
 	display: none;
 }
 
