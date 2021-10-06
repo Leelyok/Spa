@@ -22,6 +22,11 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
                 
 
+        <!-----Animate on scroll-------->
+
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
         <!-- This is our CSS stylesheet, this always goes last-->
         <link rel="stylesheet" href="/style.css">
 
@@ -34,7 +39,7 @@
 
             <header class="grid text-center tall-100 md-tall-80">
                 <div class="header-nav col-12-top grid">
-    <div class="col-5_sm-12-middle">
+    <div class="col-5_sm-11-middle sm-padded-b-0">
         <a href="/index.html" class="logo featured-text">
             <h2> The SPA Philosophy </h2>
         </a>
@@ -62,15 +67,15 @@
 </nav>
 
                 <div class="col-12">
-                    <h3 class="font-weight-extra-bold text-right"> <span class="featured-text"> relax </span> take it easy </h3>
-                    <h1 class="font-weight-light text-right"> the ultimate spa program </h1>
+                    <h3 class="font-weight-extra-bold text-right" data-aos="fade-in" data-aos-duration="1000"> <span class="featured-text"> relax </span> take it easy </h3>
+                    <h1 class="font-weight-light text-right"  data-aos="fade-up" data-aos-delay="500"> the ultimate spa program </h1>
                 
                 </div>
             </header>
 
             <!--------------- Featured section --------------->
             <section class="grid padded">
-                <div class="padded col-6_xs-12-middle">
+                <div class="padded col-6_xs-12-middle" data-aos="fade-right">
                     <h2 class="editable"> created for <span class="featured-text"> your body </span>  </h2>
                     <p> Lorem ipsum, dolor <a href="#">sit amet consectetur </a> adipisicing elit. Quidem sunt inventore natus, recusandae aliquam nam excepturi. Hic assumenda itaque magni, inventore. </p>
                     <p> Iusto officiis adipisci, veritatis recusandae exercitationem at modi molestias.
@@ -90,7 +95,7 @@
 
             <!---------------Icon grid----------------->
             <section class="padded grid-center bg-dark">
-                <div class="padded-sm col-12 text-center">
+                <div class="padded-sm col-12 text-center" data-aos="fade-in">
                     <h2> <span class="featured-text"> features </span> you will love </h2>
                 </div>
 
@@ -165,6 +170,11 @@
 
             <!-------Add jQuery script-->
             <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+            <!-----our animate scroll-->
+            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 
             <!-----our custom Javascript file------>
             <script src="/scripts.js"></script>
