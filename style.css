@@ -284,7 +284,11 @@ footer a {
     padding: 0.5%;
   }
 
-  
+  .gallery .gallery-item {
+      border-bottom: none;
+  }
+
+
 
 /* Icon Styles*/
 .fas {
