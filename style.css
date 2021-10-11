@@ -76,11 +76,23 @@
     background-image: url(/images/spa-photo-6.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-color: rgb(240,240,240);
+    background-position: center;
 }
 
-.landscape  { padding-bottom: 65%;}
-.portrait   { padding-bottom: 125%;}
-.square     { padding-bottom: 100%;}
+/* Aspect Ratio  */
+.portrait-tall { padding-bottom: 175%; }
+.portrait { padding-bottom: 125%; }
+.square { padding-bottom: 100%; }
+.landscape { padding-bottom: 66%; }
+.landscape-wide { padding-bottom: 56%; }
+
+/* Background Position */
+.bg-pos-t { background-position: top; }
+.bg-pos-b { background-position: bottom; }
+.bg-pos-l { background-position: left; }
+.bg-pos-r { background-position: right; }
+
 
 .bg-dark { 
     background-color: #403630;
@@ -94,6 +106,8 @@
 .bg-lightblue {
     background-color: rgb(227, 227, 243);
 }
+
+
 
 
 .tall-40      { min-height: 40vh; }
@@ -264,6 +278,13 @@ footer a {
     background-image: url('/images/spa-photo-7.jpg');
     background-position: 50% 35%;
 }
+
+/*   Image Gallery  */
+.gallery [class*="col-"] {
+    padding: 0.5%;
+  }
+
+  
 
 /* Icon Styles*/
 .fas {
