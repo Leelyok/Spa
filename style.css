@@ -234,6 +234,7 @@ footer a {
  }
  
  .hamburger-button {
+    text-align: right;
     position: relative;
     z-index: 2;
  }

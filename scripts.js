@@ -14,6 +14,7 @@ $(document).ready(function() {
 
 });
 
+//LightGallery PopUp
 
 lightGallery(document.getElementById('lightgallery'), {
     speed: 500,
